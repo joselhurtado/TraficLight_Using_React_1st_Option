@@ -12,15 +12,15 @@ export const TrafficLight = () => {
 						: color === "red"
 							? setColor("yellow")
 							: null;
-			}, 2000);
+			}, 5000);
 			return () => clearInterval(interval);
 		},
 		[color]
 	);
 
 	return (
-		<div className="body">
-			<div className="trafficPole container">
+		<div className="body lightBox">
+			<div className="trafficPole container-sm">
 			<div className="protector"></div>
 			<div className="protector"></div>
 			<div className="protector"></div>
